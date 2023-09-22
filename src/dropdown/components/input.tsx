@@ -53,7 +53,7 @@ export const Input = ({
         onFocus={(e) => {
           setDrop(true)
           if (county !== null) {
-            county.current.scrollIntoView({
+            county?.current?.scrollIntoView({
               behavior: 'smooth',
               block: 'start',
             })
